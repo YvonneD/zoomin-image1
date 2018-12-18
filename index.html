@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+    <title>intense images plugin demo</title>
+    <meta name="description" content="intense images plugin demo">
+    <meta name="keywords" content="intense images,plugin">
+    <meta name="author" content="Yifang Di">
+    <style type="text/css" media="screen">
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image {
+        cursor: url("image/zoom-in.png") 20 20, auto;
+        width: 300px;
+    }
+    </style>
+</head>
+
+<body>
+    <img src="image/1.jpg" class="image" alt="image" data-title="Travel US" data-caption="Upper Antelope Canyon">
+    <script type="text/javascript" src="intense.min.js"></script>
+    <script type="text/javascript">
+    window.onload = function() {
+        var element = document.querySelector('.image');
+        Intense(element);
+    }
+    </script>
+</body>
+
+</html>
